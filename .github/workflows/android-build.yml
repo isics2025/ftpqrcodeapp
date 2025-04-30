@@ -3,17 +3,12 @@ on:
     branches:
       - main
   workflow_dispatch:
-  workflow_dispatch
-name: Build Debug APK
 
-on:
-  push:
-    branches: [ main ]
+name: Build Debug APK
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
