@@ -1,8 +1,8 @@
 on:
-  workflow_dispatch
-on:
-  workflow_dispatch
-on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
   workflow_dispatch
 name: Build Debug APK
 
