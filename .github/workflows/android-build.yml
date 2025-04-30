@@ -1,3 +1,7 @@
+on:
+  workflow_dispatch
+on:
+  workflow_dispatch
 name: Build Debug APK
 
 on:
