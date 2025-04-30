@@ -1,0 +1,13 @@
+workflows:
+  build_android:
+    name: Build Debug APK
+    instance_type: linux-medium
+    environment:
+      vars:
+        JAVA_HOME: /usr/lib/jvm/java-11-openjdk
+    scripts:
+      - echo y | sdkmanager "platforms;android-33" "build-tools;33.0.2"
+      - chmod +x gradlew
+      - ./gradlew clean assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
