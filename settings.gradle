@@ -1,0 +1,2 @@
+rootProject.name = 'FTPQRCodeApp'
+include ':app'
